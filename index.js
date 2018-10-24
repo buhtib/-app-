@@ -1,4 +1,4 @@
-var meituan = (function() {
+var meituan = (function () {
     return {
         init() {
             this.response();
@@ -8,15 +8,20 @@ var meituan = (function() {
         event() {
             var _this = this;
         },
+
         response() {
-            var  changefont = function() {
-                let devicewidth = document.documentElement.clientWidth;
-                document.documentElement.style.fontSize = devicewidth / 3.5 + 'px';
-                console.log(devicewidth, document.documentElement.style.fontSize);
-            }
-            window.addEventListener('load', changefont);
-            window.addEventListener('resize', changefont);
+            var _this = this;
+            var devicewidth = $('html').width();
             
+            if (devicewidth >= 375) {
+                $('html').css('font-size' , 100 + 'px')
+            }else {
+                $('html').css('font-size' , devicewidth / 3.75 + 'px');
+            }
+            console.log($('html').css('font-size'));
+            window.addEventListener('load', _this.response);
+            window.addEventListener('resize',_this.response);
+
         }
     }
 }())
