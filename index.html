@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>美团</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_888409_1qpqygmhyvi.css">
     <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <nav>
+ 
             <ul class="nav_list">
-                <li class="list_left"></li>
-                <li></li>
-                <li></li>
+                <li class="nav_left">
+                    <span>深圳</span>
+                    <p><i class="icon icon-xiajiantou"></i></p>
+                </li>
+                <li class="nav_search">
+                    <label for="nav"><i class="icon icon-sousuo"></i></label>
+                    <input type="text" id="nav" placeholder="合佳酒店">
+                </li>
+                <li class="nav_right">
+                    <i class="icon icon-jiahao"></i>
+                </li>
             </ul>
-        </nav>
+       
     </header>
     <div class="section_out">
         <section>
@@ -29,7 +39,7 @@
     <footer>
 
     </footer>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <script>
         meituan.init();
     </script>
