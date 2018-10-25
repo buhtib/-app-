@@ -57,8 +57,8 @@ header .nav_list{
     width: 0.1rem;
     height: 0.06rem;
 }
-.nav_left>p i{
-    font-size: 0.1rem;
+.nav_left>p img{
+    width: 100%;
 }
 /* 中间 */
 .nav_list  .nav_search {
